@@ -233,11 +233,6 @@ $("#unanswered").html("Unanswered: " + questionsUnanswered);
 
 
 
-//Puts final score into score section
-
-
-
-
 
 
 
