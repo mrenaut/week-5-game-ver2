@@ -55,7 +55,12 @@ $("#startButton").click(function(){
       if (timer === 0) {
 
         //  The timer stops with the stop function.
-        stop();        
+        stop();     
+
+          //Shows score and hides question section when time is up
+          alert("Time's up!")
+          $("#scoreSection").show();
+          $("#questionSection").hide();   
       }
     }
 
