@@ -4,12 +4,10 @@
 //Global Variables
 //========================================================
 
-
 var questionsCorrect = 0;
 var questionsWrong = 0;
 var questionsUnanswered = 0;
 //var audio = new Audio("LINK AN AUDIO FILE HERE");
-
 
 //Function
 //========================================================
@@ -25,7 +23,6 @@ $("#questionSection").hide();
 $("#startButton").click(function(){
     $("#questionSection").show();
 });
-
 
 
 //Timer counts down 90 seconds
@@ -60,7 +57,11 @@ $("#startButton").click(function(){
           //Shows score and hides question section when time is up
           alert("Time's up!")
           $("#scoreSection").show();
-          $("#questionSection").hide();   
+          $("#questionSection").hide(); 
+          $("#correctAnswers").html("Correct Answers: " + questionsCorrect);
+          $("#incorrectAnswers").html("Incorrect Answers: " + questionsWrong);
+          $("#unanswered").html("Unanswered: " + questionsUnanswered);
+  
       }
     }
 
@@ -220,15 +221,12 @@ if ($('[id="ans40"]').is(':checked')) {
 questionsCorrect ++
 };
 
-
-
 $("#correctAnswers").html("Correct Answers: " + questionsCorrect);
 $("#incorrectAnswers").html("Incorrect Answers: " + questionsWrong);
 $("#unanswered").html("Unanswered: " + questionsUnanswered);
 
-
-    
 });
+
 
 
 //Process
