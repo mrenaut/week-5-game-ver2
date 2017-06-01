@@ -1,0 +1,16 @@
+main {
+	margin-top: 30px;
+	background-image: url("../images/background.jpg");
+	background-size:cover;
+	height: 800px;
+}
+
+.btn-group-vertical {
+	width: 100%;
+}
+
+
+
+.jumbotron {
+	height: 250px;
+}
